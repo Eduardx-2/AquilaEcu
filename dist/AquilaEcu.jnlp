@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AquilaEcu.jnlp">
+  <information>
+    <title>AquilaEcu</title>
+    <vendor>brawl</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AquilaEcu.jar" size="20012" download="eager" />
+    <jar href="lib\json-20250517.jar" size="82710" download="eager" />
+    <jar href="lib\mysql-connector-j-9.5.0.jar" size="2602851" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="aquilaecu.AquilaEcu"  name="AquilaEcu" />
+  <update check="always"/>
+</jnlp>

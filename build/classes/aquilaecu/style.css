@@ -1,0 +1,310 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 sept 2025, 01:17:33
+    Author     : brawl
+*/
+/* ==== Fondo general ==== */
+.root {
+    -fx-background-color: #1a1a2e;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* ==== TextField con fx:id="inputSearch" ==== */
+#inputSearch {
+    -fx-background-color: #2b2d42;
+    -fx-text-fill: #edf2f4;
+    -fx-prompt-text-fill: #8d99ae;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #8d99ae;
+    -fx-border-width: 1.5;
+    -fx-padding: 8 12 8 12;
+    -fx-font-size: 14px;
+}
+
+#inputSearch:focused {
+    -fx-border-color: #ef233c;
+    -fx-background-color: #3a3d5c;
+    -fx-effect: dropshadow(gaussian, rgba(239,35,60,0.4), 10, 0.5, 0, 0);
+}
+
+/* ==== Botón con fx:id="btnSearch" ==== */
+#btnSearch {
+    -fx-background-color: linear-gradient(to right, #ef233c, #d90429);
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-padding: 8 20 8 20;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0.5, 0, 1);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+#btnSearch:hover {
+    -fx-background-color: linear-gradient(to right, #ff4b5c, #ef233c);
+    -fx-effect: dropshadow(gaussian, rgba(239,35,60,0.6), 12, 0.6, 0, 0);
+}
+
+#btnSearch:pressed {
+    -fx-background-color: #c1121f;
+    -fx-effect: none;
+    -fx-translate-y: 2;
+}
+
+/* ==== Botón con fx:id="btnImage" ==== */
+#btnImage {
+    -fx-background-color: linear-gradient(to right, #2193b0, #6dd5ed);
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-padding: 8 20 8 20;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0.5, 0, 1);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+#btnImage:hover {
+    -fx-background-color: linear-gradient(to right, #56ccf2, #2f80ed);
+    -fx-effect: dropshadow(gaussian, rgba(86,204,242,0.6), 12, 0.6, 0, 0);
+}
+
+#btnImage:pressed {
+    -fx-background-color: #1b6ca8;
+    -fx-effect: none;
+    -fx-translate-y: 2;
+}
+
+/* ==== TableView con fx:id="dataTable" ==== */
+#dataTable {
+    -fx-background-color: #2b2d42;
+    -fx-border-color: #8d99ae;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-table-cell-border-color: transparent;
+    -fx-control-inner-background: #2b2d42;
+    -fx-control-inner-background-alt: #3a3d5c; /* filas alternadas */
+    -fx-padding: 6;
+    -fx-font-size: 13px;
+    -fx-text-fill: #edf2f4;
+}
+
+/* ==== Estilo de cabeceras ==== */
+#dataTable .column-header-background {
+    -fx-background-color: linear-gradient(to right, #ef233c, #d90429);
+    -fx-background-radius: 8 8 0 0;
+}
+
+#dataTable .column-header, 
+#dataTable .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+
+/* ==== Estilo de las filas ==== */
+#dataTable .table-row-cell {
+    -fx-background-radius: 6;
+    -fx-text-fill: #edf2f4;
+    -fx-alignment: CENTER;
+}
+
+#dataTable .table-row-cell:odd {
+    -fx-background-color: #3a3d5c; /* alternado */
+}
+
+#dataTable .table-row-cell:even {
+    -fx-background-color: #2b2d42;
+}
+
+#dataTable .table-row-cell:hover {
+    -fx-background-color: #4a506d;
+}
+
+/* ==== Fila seleccionada ==== */
+#dataTable .table-row-cell:selected {
+    -fx-background-color: linear-gradient(to right, #56ccf2, #2f80ed);
+    -fx-text-fill: white;
+}
+
+/* ==== Columnas individuales (puedes personalizarlas más si quieres) ==== */
+#columnD, #columnM, #columnC, #columnS, #columnP, #columnA {
+    -fx-alignment: CENTER;
+}
+
+/* ==== Botón con fx:id="insertId" ==== */
+#insertId {
+    -fx-background-color: linear-gradient(to right, #06b300, #00d26a); /* verde */
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-padding: 8 20 8 20;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0.5, 0, 1);
+}
+
+#insertId:hover {
+    -fx-background-color: linear-gradient(to right, #33e056, #00c853);
+    -fx-effect: dropshadow(gaussian, rgba(51,224,86,0.6), 12, 0.6, 0, 0);
+}
+
+#insertId:pressed {
+    -fx-background-color: #008f39;
+    -fx-effect: none;
+    -fx-translate-y: 2;
+}
+
+/* ==== Botón con fx:id="insertExtra" ==== */
+#insertExtra {
+    -fx-background-color: linear-gradient(to right, #8e2de2, #4a00e0); /* púrpura */
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-padding: 8 20 8 20;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0.5, 0, 1);
+}
+
+#insertExtra:hover {
+    -fx-background-color: linear-gradient(to right, #9d50bb, #6e48aa);
+    -fx-effect: dropshadow(gaussian, rgba(142,45,226,0.6), 12, 0.6, 0, 0);
+}
+
+#insertExtra:pressed {
+    -fx-background-color: #5a189a;
+    -fx-effect: none;
+    -fx-translate-y: 2;
+}
+
+/* ==== Botón con fx:id="consultaBtn" ==== */
+#consultaBtn {
+    -fx-background-color: linear-gradient(to right, #ff8008, #ff5722); /* naranja */
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-padding: 8 20 8 20;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0.5, 0, 1);
+}
+
+#consultaBtn:hover {
+    -fx-background-color: linear-gradient(to right, #ff9966, #ff5e62);
+    -fx-effect: dropshadow(gaussian, rgba(255,128,8,0.6), 12, 0.6, 0, 0);
+}
+
+#consultaBtn:pressed {
+    -fx-background-color: #e65100;
+    -fx-effect: none;
+    -fx-translate-y: 2;
+}
+
+
+/* Fondo general del Alert */
+.dialog-pane {
+    -fx-background-color: linear-gradient(to bottom right, #1e1e2f, #2b2b3c);
+    -fx-border-color: #4a90e2;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 15;
+}
+
+/* Encabezado del Alert */
+.dialog-pane .header-panel {
+    -fx-background-color: transparent;
+    -fx-text-fill: #f2f2f2;
+    -fx-font-family: "Segoe UI", Roboto, "Open Sans", sans-serif;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Texto del contenido */
+.dialog-pane .content {
+    -fx-text-fill: #f0f0f0; /* ✅ Más claro */
+    -fx-font-family: "Segoe UI", Roboto, "Open Sans", sans-serif;
+    -fx-font-size: 14px;
+    -fx-padding: 10 0 10 0;
+}
+
+/* Botonera del Alert */
+.dialog-pane .button-bar {
+    -fx-background-color: transparent;
+    -fx-padding: 10 0 0 0;
+}
+
+/* Estilo base para los botones */
+.dialog-pane .button {
+    -fx-background-color: #4a90e2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-padding: 7 18 7 18;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0, 0, 2);
+    -fx-font-family: "Segoe UI", Roboto, "Open Sans", sans-serif;
+    -fx-font-size: 13px;
+}
+
+/* Efecto hover */
+.dialog-pane .button:hover {
+    -fx-background-color: #6aa9ff;
+}
+
+/* Efecto al presionar */
+.dialog-pane .button:pressed {
+    -fx-background-color: #3f7edc;
+}
+
+/* Botones de cancelación más neutros */
+.dialog-pane .button.cancel-button {
+    -fx-background-color: #3b3b4f;
+    -fx-text-fill: #e0e0e0; /* ✅ Más claro también */
+}
+
+.dialog-pane .button.cancel-button:hover {
+    -fx-background-color: #515172;
+}
+
+/* Título del alert */
+.dialog-pane .header-panel .label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff5757;
+}
+
+/* Texto principal */
+.dialog-pane .content.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #e6e6e6;
+}
+
+/* Estilo de botones */
+.dialog-pane .button {
+    -fx-background-color: #ff4d4d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #ff6969;
+}
+
+.dialog-pane .button:pressed {
+    -fx-background-color: #cc3c3c;
+}

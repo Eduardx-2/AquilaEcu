@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="947.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vistaAquilaExtra.FXMLinfoDataController">
+    <stylesheets>
+        <URL value="@/aquilaecu/style.css" />
+    </stylesheets>
+   <children>
+      <TableView id="dataTable" fx:id="dataTablex" layoutX="6.0" layoutY="5.0" prefHeight="497.0" prefWidth="934.0">
+        <columns>
+          <TableColumn id="columnCanton" fx:id="columnCanton" prefWidth="173.59997272491455" text="Canton" />
+          <TableColumn id="columnMatr" fx:id="columnMatr" prefWidth="166.40000915527344" text="Matricula_Desde" />
+            <TableColumn id="columnrev" fx:id="columnrev" prefWidth="180.79998779296875" text="Ultima_revisión" />
+            <TableColumn id="columnUltm" fx:id="columnUltm" prefWidth="207.2000732421875" text="Ultima_revisión_hasta" />
+            <TableColumn id="columnHasta" fx:id="columnHasta" prefWidth="206.4000244140625" text="Matricula_Hasta" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
