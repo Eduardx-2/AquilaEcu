@@ -1,6 +1,0 @@
-{
-    "ecu_pag":{
-        "uri_info": "https://app3902.privynote.net/api/v1/transit/car-info",
-        "uri_owner":"https://app3902.privynote.net/api/v1/transit/vehicle-owner"
-    }
-}
