@@ -24,10 +24,8 @@ $  cd AquilaEcu
 $ [Linux] -> source /aquila/bin/activate
 $ [Windows] python -m venv aquila -> .\aquila\bin\activate.exe
 
-# instalar requirement linux:
-$  
 
-# Windows
+# Install
 $ python -m pip install -r requirements.txt
 
 # Ejecución
