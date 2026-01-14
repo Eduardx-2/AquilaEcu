@@ -9,4 +9,29 @@ Es un proyecto desarrollado en Java y Python, cuyo objetivo es la extracción de
 - Guarda la información en base de datos local.
 - Conexión SQL con soporte a distintas bases de datos.
 - Consulta masiva de placas.
+
+
+## Instalación
+
+```console
+# clonar el repo
+$ git clone https://github.com/Eduardx-2/AquilaEcu.git
+
+# Moverse al directorio
+$  cd AquilaEcu
+
+# Crea o inicia el entorno venv
+$ [Linux] -> source /aquila/bin/activate
+$ [Windows] python -m venv aquila -> .\aquila\bin\activate.exe
+
+# instalar requirement linux:
+$  
+
+# Windows
+$ python -m pip install -r requirements.txt
+
+# Ejecución
+$ python main.py or python3 main.py
+
+```
   
