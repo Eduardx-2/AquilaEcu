@@ -14,7 +14,7 @@ Es un proyecto desarrollado en Java y Python, cuyo objetivo es la extracción de
 ## Instalación
 
 ```console
-# La versión más completa de este proyecto solo se encuentra disponible en las realeses del proyecto, descargue y compilelo usando java, la versión extensa fue desarrollada solo para linux.
+# La versión más completa de este proyecto solo se encuentra disponible en las releases del proyecto, descargue y compilelo usando java, la versión extensa fue desarrollada solo para linux.
 # clonar el repo
 $ git clone https://github.com/Eduardx-2/AquilaEcu.git
 
